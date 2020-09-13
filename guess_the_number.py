@@ -1,7 +1,7 @@
 import random
 
 correct = 'you guessed correctly!'
-too_low = 'Too Low'
+too_low = 'Too low!!'
 too_high = 'too high'
 
 
@@ -42,6 +42,7 @@ def main():
     while True:
         guess = get_guess()
         result = check_guess(guess, secret)
+    
 
         number_of_guesses += 1
         print(result)
