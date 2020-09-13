@@ -1,7 +1,11 @@
 import random
 
 correct = 'you guessed correctly!'
+<<<<<<< HEAD
 too_low = 'too low!!!!!'
+=======
+too_low = 'Too low!!'
+>>>>>>> dbf0cdd09ba7123b6ef715b446cb0b1c6eb1333c
 too_high = 'too high'
 
 
@@ -33,7 +37,6 @@ def check_guess(guess, secret):
         return too_high
 
 
-
 def main():
 
     (low, high) = configure_range()
@@ -43,6 +46,7 @@ def main():
     while True:
         guess = get_guess()
         result = check_guess(guess, secret)
+    
 
         number_of_guesses += 1
         print(result)
